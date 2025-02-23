@@ -1,20 +1,18 @@
 // import Input from "./components/form/input";
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/layout/Footer';
 import Navbar from './components/layout/NavBar';
 import Container from './components/layout/Container';
+import Home from './components/pages/Home';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Router>
-          <Navbar />
-          <Container customClass="min-height">
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/projects">
+      <Navbar />
+      <Container customClass="min-height">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          {/* <Route path="/projects">
             <Projects />
           </Route>
           <Route path="/company">
@@ -28,11 +26,10 @@ export default function App() {
           </Route>
           <Route path="/project/:id">
             <Project />
-          </Route>
-        </Container>
-          <Footer />
-        </Router>
-      </Routes>
+          </Route> */}
+        </Routes>
+      </Container>
+        <Footer />
     </BrowserRouter>
   );
 }

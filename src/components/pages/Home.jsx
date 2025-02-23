@@ -1,9 +1,9 @@
 import styles from './Home.module.scss';
-import savings from '../../img/savings.svg';
+import savings from '../../Img/savings.svg';
 
 import LinkButton from '../layout/LinkButton';
 
-function Home() {
+export default function Home() {
   return (
     <section className={styles.home_container}>
       <h1>
@@ -15,5 +15,3 @@ function Home() {
     </section>
   );
 }
-
-export default Home;
