@@ -3,9 +3,13 @@
   color: #fff;
   padding: 0.5em 1em;
   text-decoration: none;
-  transition: 0.5s;
+  border-radius: 0.5rem;
+  transition: all 0.6s ease-in-out;
+  border: 1px solid #ffbb33;
 }
 
 .btn:hover {
-  color: #ffbb33;
+  color: #222;
+  border: 1px solid #222;
+  background-color: #ffbb33;
 }
